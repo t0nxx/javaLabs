@@ -6,7 +6,6 @@
 package q3;
 
 import java.util.Scanner;
-import javafx.application.ConditionalFeature;
 
 /**
  *
