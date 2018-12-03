@@ -1,4 +1,5 @@
 
+import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 /*
@@ -29,15 +30,22 @@ public class Home extends javax.swing.JFrame {
     }
 
     public Home(int id, String name, String address, double salary, double HoursWorked, double OvertimeHours) {
+        initComponents();
         this.id = id;
         this.name = name;
         this.address = address;
         this.salary = salary;
         this.HoursWorked = HoursWorked;
         this.OvertimeHours = OvertimeHours;
+        AddTotable();
     }
      
-    
+    private void AddTotable (){
+        DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
+        model.addRow(new Object[] {id,name,address,salary,HoursWorked,OvertimeHours});
+        ///here to make the new table to be the defualt
+        
+    }
     
 
     /**
@@ -149,10 +157,7 @@ public class Home extends javax.swing.JFrame {
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 { new Integer(1), "e1", "zzzzzz",  new Integer(2000),  new Double(100.0),  new Double(30.0)},
-                { new Integer(2), "e2", "hhhhh",  new Integer(5000),  new Double(70.0),  new Double(40.0)},
-                { new Integer(3), "e3", "ffff",  new Integer(10000),  new Double(120.0), null},
-                { new Integer(4), "e4", "sdsss",  new Integer(54444),  new Double(30.0), null},
-                { new Integer(5), "e5", "sdfsdfs",  new Integer(23000),  new Double(12.0),  new Double(44.0)}
+                { new Integer(2), "e2", "hhhhh",  new Integer(5000),  new Double(70.0),  new Double(40.0)}
             },
             new String [] {
                 "ID", "Name", "Address", "Salary", "HoursWorked", "OvertimeHours"

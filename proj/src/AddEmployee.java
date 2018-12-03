@@ -1,3 +1,6 @@
+
+import javax.swing.table.DefaultTableModel;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -13,10 +16,10 @@ public class AddEmployee extends javax.swing.JFrame {
     /**
      * Creates new form Home
      */
-    public AddEmployee() {
+    
+     public AddEmployee() {
         initComponents();
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -293,7 +296,22 @@ public class AddEmployee extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField6ActionPerformed
 
     private void saveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveActionPerformed
-      
+       // to add empl
+       ///to get values from fields
+       String id_String = this.ID.getText() ; 
+       String name = this.Name.getText()  ;// jtxtfield
+       String address = this.Address.getText();
+       String salary_String = this.Salary.getText() ;     /// we changed it to string just for recived values
+       String HoursWorked_String = this.HoursWorked.getText() ;
+       String OvertimeHours_String = this.OvertimeHours.getText();
+       /////////////////////// here we parsed the conv of strings above /////
+       int id = Integer.parseInt(id_String);
+       double salary = Double.parseDouble(salary_String);          
+       double HoursWorked = Double.parseDouble(HoursWorked_String); 
+       double OvertimeHours = Double.parseDouble(OvertimeHours_String); 
+       
+       // to set it to class home
+       new Home(id, name, address, salary, HoursWorked, OvertimeHours).setVisible(true);
     }//GEN-LAST:event_saveActionPerformed
 
     /**

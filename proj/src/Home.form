@@ -216,48 +216,30 @@
         <Component class="javax.swing.JTable" name="jTable1">
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="6" rowCount="5">
+              <Table columnCount="6" rowCount="2">
                 <Column editable="true" title="ID" type="java.lang.Integer">
                   <Data value="1"/>
                   <Data value="2"/>
-                  <Data value="3"/>
-                  <Data value="4"/>
-                  <Data value="5"/>
                 </Column>
                 <Column editable="true" title="Name" type="java.lang.String">
                   <Data value="e1"/>
                   <Data value="e2"/>
-                  <Data value="e3"/>
-                  <Data value="e4"/>
-                  <Data value="e5"/>
                 </Column>
                 <Column editable="true" title="Address" type="java.lang.String">
                   <Data value="zzzzzz"/>
                   <Data value="hhhhh"/>
-                  <Data value="ffff"/>
-                  <Data value="sdsss"/>
-                  <Data value="sdfsdfs"/>
                 </Column>
                 <Column editable="true" title="Salary" type="java.lang.Integer">
                   <Data value="2000"/>
                   <Data value="5000"/>
-                  <Data value="10000"/>
-                  <Data value="54444"/>
-                  <Data value="23000"/>
                 </Column>
                 <Column editable="true" title="HoursWorked" type="java.lang.Double">
                   <Data value="100.0"/>
                   <Data value="70.0"/>
-                  <Data value="120.0"/>
-                  <Data value="30.0"/>
-                  <Data value="12.0"/>
                 </Column>
                 <Column editable="true" title="OvertimeHours" type="java.lang.Double">
                   <Data value="30.0"/>
                   <Data value="40.0"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
-                  <Data value="44.0"/>
                 </Column>
               </Table>
             </Property>
